@@ -1,0 +1,228 @@
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+main{
+
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.new
+{
+  justify-content: center;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: var(--spacing);
+  }
+
+  .webcoderskull {
+    font-size: 0.5em;
+  }
+  
+  svg {
+    position: relative;
+    width: 100%;
+    height: 20%;
+     background: #00000008;
+    background-size: 0.12em 10%;
+    font: 16em/1 Arial;
+    grid-column: 2/ span 6; 
+  }
+  
+  .webcoderskull-1 {
+    fill: none;
+    stroke: rgb(101, 6, 244);
+    stroke-dasharray: 7% 28%;
+    stroke-width: 3px;
+    -webkit-animation: stroke-offset 7s 1;
+            animation: stroke-offset 7s 1;
+  }
+  .webcoderskull-1:nth-child(1) {
+    stroke: #00b3ff;
+    stroke-dashoffset: 7%;
+  }
+  .webcoderskull-1:nth-child(2) {
+    stroke: #00fff7;
+    stroke-dashoffset: 14%;
+  }
+  .webcoderskull-1:nth-child(3) {
+    stroke: #ffffff;
+    stroke-dashoffset: 21%;
+  }
+  .webcoderskull-1:nth-child(4) {
+    stroke: #006eff;
+    stroke-dashoffset: 28%;
+  }
+  .webcoderskull-1:nth-child(5) {
+    stroke: #7d7d7d;
+    stroke-dashoffset: 35%;
+  }
+  
+  @-webkit-keyframes stroke-offset {
+    50% {
+      stroke-dashoffset: 35%;
+      stroke-dasharray: 0 87.5%;
+    }
+  }
+  
+  @keyframes stroke-offset {
+    50% {
+      stroke-dashoffset: 35%;
+      stroke-dasharray: 0 87.5%;
+    }
+  }
+  
+
+  section {
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote p {
+    color: black;
+    background-color: white;
+    font-size: 4rem;
+    display: inline;
+    line-height: 1;
+  }
+
+  .left {
+    grid-column: 6 / 12;
+  }
+  .wrapper {
+    width:500px;
+    margin:0 auto;
+    position: relative;
+    text-align:center;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size:6rem;
+    /* display:inline-block; */
+    position: relative;
+    color:transparent;
+    margin-bottom: 0;
+    
+    &:before {
+      content:"Shatter";
+      position: absolute;
+      top:0px;
+      left:22px;
+      color:white;
+      clip-path: inset(0px 298px 0px 0px);
+      transition:all 0.3s;
+    }
+    
+    span:before {
+      content:"Shatter";
+      position: absolute;
+      top:0px;
+      left:22px;
+      color:white;
+      clip-path: inset(0px 200px 0px 154px);
+      transition:all 0.3s;
+    }
+    
+      
+    &:after {
+      content:"Shatter";
+      position: absolute;
+      right:24px;
+      top:0px;
+      color:white;
+      clip-path: inset(0px 100px 0px 250px);
+      transition:all 0.5s;
+    }
+    
+    span:after {
+      content:"Shatter";
+      position: absolute;
+      right:24px;
+      top:0px;
+      color:white;
+      clip-path: inset(0px 0px 0px 353px);
+      transition:all 0.5s;
+    }
+    
+     &:hover:after {
+        top:10px;
+       cursor:pointer;
+       color:rgba(255,255,255,0.6);
+      }
+    
+    &:hover:before {
+        top:-10px;
+        left:0px;
+        cursor:pointer;
+        color:rgba(255,255,255,0.6);
+      }
+    
+    &:hover span:before {
+      top:4px;
+      cursor:pointer;
+    }
+    
+    &:hover span:after {
+      top:-8px;
+      left:30px;
+      cursor:pointer;
+    }
+    
+    /*span {
+      display:block;
+      transition:all 0.3s;
+      &:hover:before {
+        
+      }
+      &:hover:after {
+        top:14px;
+        cursor:pointer;
+      }
+    }*/
+  }
+  
+  h3 {
+    color:white;
+  }
+
+  
